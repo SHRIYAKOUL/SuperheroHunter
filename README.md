@@ -2,7 +2,7 @@
 
 I have created a superhero hunter app by  using Vanilla javascript only .
 
-Features--
+#Features--
   1. Home Page - 
       a) Fetch and display a SuperHero (Character) on the home page based on search result. Also search bar will filter out the character name list based on search query.
          Suppose I type “ba” in the search box, it should show all the characters name who start from prefix "ba" like “batman” and so on. 
