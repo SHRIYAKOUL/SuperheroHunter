@@ -1,0 +1,118 @@
+body {
+    font-family: 'Monospace',cursive;
+    margin: 0;
+    padding: 0;
+    color:antiquewhite;
+    background-color:rgb(3, 96, 91);
+    cursor: pointer;
+}
+#nav-bar{
+    width:98.8vw;
+    height:70px;
+    background-color: rgb(29, 1, 8);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-bar a{
+    text-decoration: none;
+    margin:30px;
+    color:rgb(229, 140, 105);
+}
+#nav-bar a:hover{
+    text-decoration: underline;
+    text-shadow: 2px 1px white;
+
+}
+h1{
+    text-decoration: none;
+    margin:7px;
+    color:rgb(229, 140, 105);
+    text-decoration: underline;
+    text-shadow: 2px 1px white;
+}
+
+h3{
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+    color:rgb(246, 196, 196);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 2px 1px 5px rgb(219, 243, 166); 
+
+}
+
+
+  /* Add these styles to your existing CSS */
+#characterDetails ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#characterDetails li {
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+  
+#characterDetails li:before {
+    content: ">>>";
+    margin-right: 5px;
+}
+  
+#characterDetails {
+    padding:8px;
+    width:80vw;
+    margin:2% 12% ;
+    border:2px solid wheat;
+    text-align: center;
+    background-color: rgb(21, 3, 8);
+    text-wrap:initial;
+
+}
+  
+#characterDetails h2 { 
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    color:rgb(246, 196, 196);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+#characterDetails h2:hover{
+    text-shadow: 2px 2px 5px rgb(219, 243, 166); 
+    text-decoration: underline;
+}
+  
+#characterDetails img {
+    width:35%;
+    position:relative;
+    width:block;
+    border-radius: 50%;
+    border:2px solid wheat;
+}
+  
+#characterDetails p {
+    margin-left: 25%;
+    text-align: center;
+    text-wrap:ba;
+    width:40vw;
+    color:#a0a0a6;
+    line-height: 2em;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+  
+#characterDetails h3 {
+    margin-bottom: 5px;
+}
+  
+#characterDetails div div {
+    margin-left: 20px;
+}
+  
