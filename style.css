@@ -1,40 +1,46 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Monospace',cursive;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monospace', cursive;
 }
-body{
-    color:rgb(239, 221, 198);
+
+body {
+    color: rgb(239, 221, 198);
     background-image: url("https://c4.wallpaperflare.com/wallpaper/459/712/834/movie-avengers-infinity-war-black-panther-marvel-comics-black-widow-wallpaper-preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgb(3, 96, 91);
+    background-color: rgb(3, 96, 91);
     text-align: center;
     font-size: 1.2rem;
     min-height: 100vh;
-    
+
 }
-h1{
-    text-shadow: 2px 1px 5px rgb(159, 210, 76); 
+
+h1 {
+    text-shadow: 2px 1px 5px rgb(159, 210, 76);
 }
-h1:hover{
+
+h1:hover {
     text-shadow: 2px 1px 10px rgb(241, 201, 24);
 }
+
 /* ======================================================NAV-BAR Started========================================================== */
-#nav-bar{
-    width:100vw;
-    height:70px;
+#nav-bar {
+    width: 100vw;
+    height: 70px;
     background-color: rgb(29, 1, 8);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#nav-bar a{
+
+#nav-bar a {
     text-decoration: none;
-    margin:10px;
-    color:rgb(229, 140, 105);
+    margin: 10px;
+    color: rgb(229, 140, 105);
 }
-#nav-bar a:hover{
+
+#nav-bar a:hover {
     text-decoration: underline;
     text-shadow: 2px 1px white;
 
@@ -43,68 +49,72 @@ h1:hover{
 /* ======================================================NAV-BAR Ended========================================================== */
 /* ======================================================Styling input box and buttons ========================================================== */
 
-#searchInput,#searchButton,#favouriteButton,#moreDetailsButton{
+#searchInput,
+#searchButton,
+#moreDetailsButton {
     border: 2px solid darkcyan;
     border-radius: 5px;
     font-size: 1rem;
-    padding:8px;
+    padding: 8px;
     background-color: black;
-    color:rgb(190, 94, 94);
+    color: rgb(190, 94, 94);
     cursor: pointer;
 }
-#searchButton:hover{
+
+#searchButton:hover {
     background-color: rgb(13, 9, 27);
     box-shadow: 0 0 2px 3px rgb(174, 213, 219);
 }
-#favouriteButton:hover{
+
+
+#moreDetailsButton:hover {
     margin-top: 5px;
     background-color: rgb(21, 1, 1);
     border-color: rgb(140, 91, 91);
     box-shadow: 0 0 2px 3px burlywood;
 }
-#moreDetailsButton:hover{
-    margin-top: 5px;
-    background-color: rgb(21, 1, 1);
-    border-color: rgb(140, 91, 91);
-    box-shadow: 0 0 2px 3px burlywood;
-}
+
 /* ===================Display superhero details==================== */
 .card-container {
-    padding:8px;
-    width:40vw;
-    margin:2% 30%;
-    border:2px solid wheat;
+    padding: 8px;
+    width: 40vw;
+    margin: 2% 30%;
+    border: 2px solid wheat;
     text-align: center;
     background-color: rgb(21, 3, 8);
-    text-wrap:initial;
+    text-wrap: initial;
 
 }
+
 /* Style superhero image */
-.container-character-image img{
-    width:40%;
-    position:relative;
-    width:block;
+.container-character-image img {
+    width: 40%;
+    position: relative;
+    width: block;
     border-radius: 50%;
-    border:2px solid wheat;
+    border: 2px solid wheat;
 
 }
+
 /* Style superhero name  */
-.character-name{
+.character-name {
     padding: 0.5em 0 0.5em 0;
     text-align: center;
-    color:rgb(246, 196, 196);
+    color: rgb(246, 196, 196);
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
 }
-.character-name:hover{
-    text-shadow: 2px 3px 5px rgb(219, 243, 166); 
+
+.character-name:hover {
+    text-shadow: 2px 3px 5px rgb(219, 243, 166);
 }
+
 /* ================================================= Style superhero description  =====================================*/
-.character-description{
+.character-description {
     text-align: center;
-    width:40vw;
-    color:#a0a0a6;
+    width: 40vw;
+    color: #a0a0a6;
     line-height: 2em;
     font-weight: 300;
     font-size: 1.2rem;
@@ -113,46 +123,49 @@ h1:hover{
 
 /* ================================================== Styling suggestion list ==========================================*/
 
-.input-container {
-    position: relative; 
-}
-
 .list {
-    position: absolute;
-    margin-left: 36%;
-    width: calc(1235px - 990px);
-    font-size: 1rem;
-    z-index:1;
-    background-color: rgb(3, 66, 70);
-    color: rgb(204, 243, 187);
-    text-decoration: underline;
-   
-}
-/* For screens smaller than 950px*/
-@media (max-width: 950px) {
-    .list {
-      margin-left: 33%;
-   
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-/* For screens between 850px and 950px */
-@media (min-width: 850px) and (max-width: 950px) {
-    .list {
-      margin-left: 30%;
-   
-    }
+.autocomplete-items {
+    width: calc(32% - 10px);
+    margin-bottom: 20px;
+    
+    border: 2px solid wheat;
+    color: rgb(206, 96, 127);
+    text-shadow: 2px 1px white;
+
 }
 
-/* For screens smaller than 650px */
-@media (max-width: 850px) {
-    .list {
-        margin-left: 25%;
-     
-    }
-} 
+.autocomplete-items img {
+    width: 40%;
+    height: auto;
+    border: 2px solid wheat;
+    border-radius: 50%;
+    margin:5px;
+}
+
 
 .autocomplete-items:hover{
     background-color: rgb(204, 243, 187);
     color: rgb(3, 66, 70);
+}
+
+button{
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: black;
+    color: rgb(190, 94, 94);
+    cursor: pointer;
+    margin:5px;
+}
+button:hover {
+    margin-top: 5px;
+    background-color: rgb(21, 1, 1);
+    border-color: rgb(140, 91, 91);
+    box-shadow: 0 0 2px 3px burlywood;
 }
